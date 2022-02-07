@@ -1,0 +1,18 @@
+query getUsersWithAliasesError($userAID: Int!, $userBID: Int!) {
+  userA : user(id: $userAID) {
+    name
+    age
+    shark
+  },
+ userB : user(id: $userBID) {
+    name
+    age
+  }
+  
+   users {
+     name
+    age
+    shark
+   }
+
+}
